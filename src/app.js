@@ -1,5 +1,6 @@
 import './style.css';
 
+
 function headerGenerate() {
     const header = document.createElement('div');
     const logo = document.createElement('h1');
@@ -16,17 +17,36 @@ function headerGenerate() {
     header.classList.add('header');
     ul.classList.add('headerList')
     home.classList.add('headerListItem')
+    home.classList.add('selected')
     menu.classList.add('headerListItem')
     contact.classList.add('headerListItem')
 
     home.addEventListener('click', (e) => {
-        console.log(e.target);
+        document.querySelector('.home').classList.remove('deActive')
+        document.querySelector('.menu').classList.add('deActive')
+        document.querySelector('.contact').classList.add('deActive')
+
+        home.classList.add('selected')
+        menu.classList.remove('selected')
+        contact.classList.remove('selected')
     })
     menu.addEventListener('click', (e) => {
-        console.log(e.target);
+        document.querySelector('.home').classList.add('deActive')
+        document.querySelector('.menu').classList.remove('deActive')
+        document.querySelector('.contact').classList.add('deActive')
+
+        home.classList.remove('selected')
+        menu.classList.add('selected')
+        contact.classList.remove('selected')
     })
     contact.addEventListener('click', (e) => {
-        console.log(e.target);
+        document.querySelector('.home').classList.add('deActive')
+        document.querySelector('.menu').classList.add('deActive')
+        document.querySelector('.contact').classList.remove('deActive')
+
+        home.classList.remove('selected')
+        menu.classList.remove('selected')
+        contact.classList.add('selected')
     })
 
     ul.appendChild(home)
