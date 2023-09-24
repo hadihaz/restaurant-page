@@ -34,6 +34,29 @@ body {
 
 }
 
+.main {
+    min-height: 100px;
+}
+
+.footer {
+    background-color: orangered;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContent {
+    text-align: center;
+    color: white;
+}
+
+.footerLink {
+    color: white;
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width: 800px) {
 
     .header {
