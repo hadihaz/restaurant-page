@@ -23,6 +23,7 @@ function headerGenerate() {
 
     home.addEventListener('click', (e) => {
         document.querySelector('.home').classList.remove('deActive')
+        document.querySelector('.home').classList.add('active')
         document.querySelector('.menu').classList.add('deActive')
         document.querySelector('.contact').classList.add('deActive')
 
@@ -33,6 +34,7 @@ function headerGenerate() {
     menu.addEventListener('click', (e) => {
         document.querySelector('.home').classList.add('deActive')
         document.querySelector('.menu').classList.remove('deActive')
+        document.querySelector('.menu').classList.add('active')
         document.querySelector('.contact').classList.add('deActive')
 
         home.classList.remove('selected')
@@ -43,6 +45,7 @@ function headerGenerate() {
         document.querySelector('.home').classList.add('deActive')
         document.querySelector('.menu').classList.add('deActive')
         document.querySelector('.contact').classList.remove('deActive')
+        document.querySelector('.contact').classList.add('active')
 
         home.classList.remove('selected')
         menu.classList.remove('selected')

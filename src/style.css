@@ -30,7 +30,15 @@ body {
 }
 
 .main {
-    min-height: 100px;
+    min-height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    display: flex;
 }
 
 .deActive {
@@ -46,14 +54,26 @@ body {
 }
 
 .menu {
+
     font-size: large;
 
 }
 
 .contact {
-    font-size: large;
-
+    font-size: 18px;
+    width: 600px;
+    height: 280px;
+    border-radius: 20px;
+    border: solid 5px rgb(255, 102, 0);
+    color: rgb(255, 102, 0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.contact p{
+    margin: 5px;
+}
+
 
 .footer {
     background-color: rgb(255, 102, 0);
@@ -100,5 +120,12 @@ body {
     .selected {
         border-radius: 20px;
     }
+
+    .contact {
+        font-size: 16px;
+        height: 200;
+        width: 300px;
+    }
+
 
 }
