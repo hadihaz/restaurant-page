@@ -10,33 +10,32 @@ console.log(foods[0].name);
 function menuGenerate() {
   const menu = document.createElement('div');
   for (let food of foods) {
-    const item = document.createElement('div')
-    const header = document.createElement('div')
-    const body = document.createElement('div')
-    const name = document.createElement('div')
-    const price = document.createElement('div')
-    const description = document.createElement('div')
+    const item = document.createElement('div');
+    const header = document.createElement('div');
+    const body = document.createElement('div');
+    const name = document.createElement('div');
+    const price = document.createElement('div');
+    const description = document.createElement('div');
 
-    name.innerHTML = food.name
-    price.innerHTML = food.price
-    description.innerHTML = food.description
+    name.innerHTML = food.name;
+    price.innerHTML = food.price;
+    description.innerHTML = food.description;
 
-    item.classList.add('food')
-    header.classList.add('foodHeader')
-    body.classList.add('foodBody')
-    price.classList.add('foodPrice')
+    item.classList.add('food');
+    header.classList.add('foodHeader');
+    body.classList.add('foodBody');;
+    price.classList.add('foodPrice');
 
-
-    header.appendChild(name)
-    header.appendChild(price)
-    body.appendChild(description)
-    item.appendChild(header)
-    item.appendChild(body)
-    menu.appendChild(item)
+    header.appendChild(name);
+    header.appendChild(price);
+    body.appendChild(description);
+    item.appendChild(header);
+    item.appendChild(body);
+    menu.appendChild(item);
   }
 
-  menu.classList.add('menu')
-  menu.classList.add('deActive')
+  menu.classList.add('menu');
+  menu.classList.add('deActive');
 
   return menu;
 }
