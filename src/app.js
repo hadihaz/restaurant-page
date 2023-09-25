@@ -9,7 +9,7 @@ function headerGenerate() {
     const menu = document.createElement('li');
     const contact = document.createElement('li');
 
-    logo.innerHTML = 'Restaurant Page';
+    logo.innerHTML = 'Odin Restaurant';
     home.innerHTML = 'Home';
     menu.innerHTML = 'Menu';
     contact.innerHTML = 'Contact';
@@ -17,9 +17,12 @@ function headerGenerate() {
     header.classList.add('header');
     ul.classList.add('headerList')
     home.classList.add('headerListItem')
+    home.classList.add('headerListHome')
     home.classList.add('selected')
     menu.classList.add('headerListItem')
+    menu.classList.add('headerListMenu')
     contact.classList.add('headerListItem')
+    contact.classList.add('headerListContact')
 
     home.addEventListener('click', (e) => {
         document.querySelector('.home').classList.remove('deActive')
